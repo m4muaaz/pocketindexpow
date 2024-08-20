@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr762_pocketindexes",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr762_pocketindex",
+    "MaxGetRowsCount": 500,
+    "Name": "PocketIndices",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr762_amount": "Amount",
+      "cr762_date": "Date",
+      "cr762_give": "Give",
+      "cr762_name": "Name",
+      "cr762_note": "Note",
+      "cr762_phone": "Phone",
+      "cr762_pocketindex_AsyncOperations": "System Jobs",
+      "cr762_pocketindex_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr762_pocketindex_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr762_pocketindex_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr762_pocketindex_ProcessSession": "Process Sessions",
+      "cr762_pocketindex_SyncErrors": "Sync Errors",
+      "cr762_pocketindexid": "PocketIndex",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "PocketIndices",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "PocketIndices (Views)",
+    "Name": "_cr762_pocketindex_views",
+    "RelatedEntityName": "PocketIndices",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "03b21eab-cc29-45b7-bb68-25af6f57e66f": "Inactive PocketIndices",
+      "4b317718-3a5b-4517-84c0-657371ea5bed": "Active PocketIndices",
+      "beca0228-91b5-4fe5-960c-b13923e58e6f": "PocketIndex Lookup View",
+      "d6ea01a3-b50d-4350-8474-ddc7bbfa1f76": "PocketIndex Associated View",
+      "e48cdc85-248e-47d4-b5a2-1353a159107f": "PocketIndex Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (PocketIndices)",
+    "Name": "cr762_pocketindex_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "PocketIndices"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "PocketIndices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (PocketIndices)",
+    "Name": "cr762_pocketindex_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "PocketIndices"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "PocketIndices",
+    "Type": "OptionSetInfo"
+  }
+]

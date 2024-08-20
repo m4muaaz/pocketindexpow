@@ -1,0 +1,70 @@
+Splash As screen:
+    Fill: =RGBA(46, 15, 47, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Circle1 As circle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =364
+        Width: =378
+        X: =135
+        Y: =129
+        ZIndex: =1
+
+    Image3 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =254
+        Image: ='document-file-in-pocket-icon-free-vector'
+        Width: =258
+        X: =195
+        Y: =184
+        ZIndex: =2
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =60
+        Text: ="Pocket Index"
+        Width: =560
+        X: =44
+        Y: =524
+        ZIndex: =3
+
+    Label2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(205, 209, 213, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: |-
+            ="By 
+            Apexius Devs"
+        Width: =560
+        X: =44
+        Y: =1024
+        ZIndex: =4
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(30, 14, 91, 1), -20%)
+        OnSelect: =Navigate(HomeScreen)
+        Size: =20
+        Text: ="Continue"
+        Width: =280
+        X: =184
+        Y: =676
+        ZIndex: =5
+

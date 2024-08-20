@@ -1,0 +1,288 @@
+HomeScreen As screen:
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(46, 15, 47, 1)
+        Fill: =RGBA(46, 15, 47, 1)
+        Height: =343
+        Width: =640
+        ZIndex: =1
+
+    Label3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =67
+        Size: =30
+        Text: =User().FullName
+        Width: =477
+        X: =80
+        Y: =9
+        ZIndex: =2
+
+    Image1 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =158
+        Image: =
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Width: =248
+        X: =45
+        Y: =92
+        ZIndex: =4
+
+    Image1_1 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =158
+        Image: =
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Width: =248
+        X: =348
+        Y: =92
+        ZIndex: =5
+
+    Label4 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(46, 15, 47, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =21
+        Text: ="To Receive"
+        Width: =175
+        X: =65
+        Y: =105
+        ZIndex: =6
+
+    Label4_1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(46, 15, 47, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =21
+        Text: ="To Pay"
+        Width: =175
+        X: =370
+        Y: =105
+        ZIndex: =7
+
+    TextInput1 As text:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =61
+        HintText: ="Search"
+        HoverBorderColor: =RGBA(92, 74, 168, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(185, 173, 246, 1)
+        RadiusBottomLeft: |+
+            =60
+            
+        RadiusBottomRight: |
+            =60
+        RadiusTopLeft: |
+            =60
+        RadiusTopRight: |
+            =60
+        Size: =21
+        Width: =605
+        X: =15
+        Y: =268
+        ZIndex: =8
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(46, 15, 47, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =35
+        Text: ="CUSTOMERS"
+        Width: =560
+        X: =40
+        Y: =359
+        ZIndex: =10
+
+    Gallery2 As gallery.galleryVertical:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DelayItemLoading: =true
+        Height: =599
+        Items: |-
+            =Filter(
+                PocketIndices,TextInput1.Text in Name
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =134
+        Y: =429
+        ZIndex: =11
+
+        Image4 As image:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Image: =
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =60
+            RadiusBottomRight: =60
+            RadiusTopLeft: =60
+            RadiusTopRight: =60
+            Width: =616
+            X: =5
+            Y: =15
+            ZIndex: =1
+
+        Label7 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Name
+            Width: =560
+            X: =33
+            Y: =15
+            ZIndex: =2
+
+        Label8 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =60
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.Date
+            Width: =242
+            Y: =50
+            ZIndex: =3
+
+        Label9 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(99, 139, 44, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =90
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Amount
+            Width: =184
+            X: =328
+            Y: =25
+            ZIndex: =4
+
+        Label10 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(184, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =74
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Give
+            Width: =134
+            X: =428
+            Y: =32
+            ZIndex: =5
+
+        Icon4 As icon.Edit:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(92, 74, 168, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Information
+            OnSelect: =Navigate(HomeScreen_1)
+            Width: =50
+            X: =543
+            Y: =44
+            ZIndex: =6
+
+    Rectangle6 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(46, 15, 47, 1)
+        Height: =108
+        Width: =640
+        Y: =1028
+        ZIndex: =12
+
+    Circle2 As circle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(242, 239, 223, 1)
+        X: =274
+        Y: =1012
+        ZIndex: =15
+
+    Icon8 As icon.Add:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Add
+        OnSelect: |-
+            =ResetForm(Form1);
+            NewForm(Form1);
+            Navigate(Transaction)
+        X: =292
+        Y: =1030
+        ZIndex: =16
+
+    Icon9 As icon.Home:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Splash)
+        X: =2
+        ZIndex: =17
+
+    Label13 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =55
+        Size: =21
+        Text: ="RS. "&Sum(PocketIndices,Amount)
+        Width: =209
+        X: =65
+        Y: =157
+        ZIndex: =18
+
+    Label13_1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =55
+        Size: =21
+        Text: ="RS. "&Sum(PocketIndices,Give)
+        Width: =209
+        X: =367
+        Y: =157
+        ZIndex: =19
+

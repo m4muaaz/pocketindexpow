@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"Date\":\"17 ju\",\"Money\":900,\"Name\":\"Muaaz\"},{\"Date\":\"17 ju\",\"Money\":900,\"Name\":\"Ashir\"},{\"Date\":\"17 ju\",\"Money\":900,\"Name\":\"Hassan\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Table1",
+    "OrderedColumnNames": [
+      "Name",
+      "Date",
+      "Money"
+    ],
+    "OriginalName": "Table1",
+    "OriginalSchema": "*[Date:s, Money:n, Name:s]",
+    "Schema": "*[Date:s, Money:n, Name:s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]
