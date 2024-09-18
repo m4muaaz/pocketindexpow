@@ -36,21 +36,6 @@ Splash As screen:
         Y: =524
         ZIndex: =3
 
-    Label2 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(92, 74, 168, 1)
-        Color: =RGBA(205, 209, 213, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =70
-        Size: =21
-        Text: |-
-            ="By 
-            Apexius Devs"
-        Width: =560
-        X: =44
-        Y: =1024
-        ZIndex: =4
-
     Button1 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
